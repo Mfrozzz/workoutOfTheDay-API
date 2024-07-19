@@ -9,4 +9,16 @@ const getRecordForWorkout = (workoutId) => {
   }
 };
 
-module.exports = { getRecordForWorkout };
+const getWorkoutForMemberId = (workoutId, memberId) => {
+  try {
+    const record = Record.getRecordForWorkoutMemberId(workoutId, memberId);
+    return record;
+  } catch (error) {
+    throw error;
+  }
+};
+
+module.exports = {
+  getRecordForWorkout,
+  getWorkoutForMemberId
+};
