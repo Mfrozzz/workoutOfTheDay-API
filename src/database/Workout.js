@@ -82,7 +82,7 @@ const updateOneWorkout = (workoutId, changes) => {
             message: error?.message || error 
         };
     }
-  };
+};
 
 const deleteOneWorkout = (workoutId) => {
     try {
