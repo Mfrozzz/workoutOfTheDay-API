@@ -2,25 +2,25 @@ const express = require("express");
 const jwt = require("jsonwebtoken");
 const config = require("../config/config");
 
-function middleware(req, res){
-    const authHeader = req.headers.authorization;
-    if(!authHeader){
-        throw {
+function verifyToken(req,res,next){
+    let token = req.headers['authorization']
+    token = token.split(" ")[1];
+    if(!token){
+        return res.status(401).send({
             status: "FAILED",
-            message: "missing jwt token"
-        }
+            message: "Access denied"
+        });
     }
-    const [type,token] = authHeader.split(' ');
     try {
-        const decodeToken = jwt.verify(token, config.jwt.secret);
-        req.user = {id:decodeToken}
-        return NextFunction();
+        const decoded = jwt.verify(token, config.jwt.secret);
+        req.userId = decoded.userId;
+        next();
     } catch (error) {
-        throw {
+        res.status(401).send({
             status: "FAILED",
-            message: "invalid jwt token"
-        }
+            message: "Something went wrong"
+        })
     }
 }
 
-module.export = middleware;
+module.exports = verifyToken;

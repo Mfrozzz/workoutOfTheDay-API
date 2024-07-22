@@ -83,12 +83,10 @@ Request  Response
   -------------------
 ```
 
-<ul>
-    <li> <b>Router</b>: Camada que recebe as requisições e por meio de suas rotas transfere para a controller correspondente;</li>
-    <li><b>Controller</b>: Camada que trata das requisições e respostas HTTP dos nossos end-points;</li>
-    <li><b>Service Layer</b>: Camada onde se encontram as regras de negócio do sistema;</li>
-    <li><b>Data Access Layer</b>: Camada que age junto do banco de dados, procurando, adicionando, atualizando ou deletando os registros. Neste primeiro momento, o banco de dados encontra-se como apenas um arquivo JSON.</li>
-</ul>
+* **Router**: Camada que recebe as requisições e por meio de suas rotas transfere para a controller correspondente;
+* **Controller**: Camada que trata das requisições e respostas HTTP dos nossos end-points;
+* **Service Layer**: Camada onde se encontram as regras de negócio do sistema;
+* **Data Access Layer**: Camada que age junto do banco de dados, procurando, adicionando, atualizando ou deletando os registros. Neste primeiro momento, o banco de dados encontra-se como apenas um arquivo JSON.
 
 <hr>
 
@@ -103,15 +101,14 @@ localhost:3000/api/v1/workouts
 ```
 
 <p>E seus end-points são:</p>
-<ul>
-    <li><b>Get All Workouts:</b> Realiza a exibição de todos os registros da tabela;</li>
-    <li><b>Get One Workout:</b> Exibe um registro específico da tabela (busca pelo id do elemento);</li>
-    <li><b>Create New Workout:</b> Cria um novo registro na tabela;</li>
-    <li><b>Update Workout:</b> Atualiza determinado registro na tabela;</li>
-    <li><b>Get Records for Workout:</b> Exibe os records para o exercicio buscado (busca pelo id do elemento);</li>
-    <li><b>Get Workout Member ID:</b> Exibe qual membro exatamente possui o record;</li>
-    <li><b>Delete Workout:</b> Apaga o registro da tabela.</li>
-</ul>
+
+* **Get All Workouts:** Realiza a exibição de todos os registros da tabela;
+* **Get One Workout:** Exibe um registro específico da tabela (busca pelo id do elemento);
+* **Create New Workout:** Cria um novo registro na tabela;
+* **Update Workout:** Atualiza determinado registro na tabela;
+* **Get Records for Workout:** Exibe os records para o exercicio buscado (busca pelo id do elemento);
+* **Get Workout Member ID:** Exibe qual membro exatamente possui o record;
+* **Delete Workout:** Apaga o registro da tabela.
 
 <h3>Record</h3>
 
@@ -122,13 +119,13 @@ localhost:3000/api/v1/records
 ```
 
 <p>E seus end-points são:</p>
-<ul>
-    <li><b>Get All Records:</b> Realiza a exibição de todos os registros da tabela;</li>
-    <li><b>Get One Record:</b> Exibe um registro específico da tabela (busca pelo id do elemento);</li>
-    <li><b>Create New Record:</b> Cria um novo registro na tabela;</li>
-    <li><b>Update Record:</b> Atualiza determinado registro na tabela;</li>
-    <li><b>Delete Record:</b> Apaga o registro da tabela.</li>
-</ul>
+
+* **Get All Records:** Realiza a exibição de todos os registros da tabela;
+* **Get One Record:** Exibe um registro específico da tabela (busca pelo id do elemento);
+* **Create New Record:** Cria um novo registro na tabela;
+* **Update Record:** Atualiza determinado registro na tabela;
+* **Delete Record:** Apaga o registro da tabela.
+
 
 <h3>Member</h3>
 
@@ -139,25 +136,24 @@ localhost:3000/api/v1/members
 ```
 
 <p>E seus end-points são:</p>
-<ul>
-    <li><b>Get All Members:</b> Realiza a exibição de todos os registros da tabela;</li>
-    <li><b>Get One Member:</b> Exibe um registro específico da tabela (busca pelo id do elemento);</li>
-    <li><b>Create New Member:</b> Cria um novo registro na tabela;</li>
-    <li><b>Update Member:</b> Atualiza determinado registro na tabela;</li>
-    <li><b>Delete Member:</b> Apaga o registro da tabela.</li>
-</ul>
+
+* **Get All Members:** Realiza a exibição de todos os registros da tabela;
+* **Get One Member:** Exibe um registro específico da tabela (busca pelo id do elemento);
+* **Create New Member:** Cria um novo registro na tabela;
+* **Update Member:** Atualiza determinado registro na tabela;
+* **Delete Member:** Apaga o registro da tabela.
+
 
 <hr>
 
 <h2 id="SccNext">Próximos Passos</h2>
 
 <p>Para trabalhos futuros e melhorias para esse pequeno projeto temos:</p>
-<ul>
-    <li>Utilização de um Banco de dados real (Seja ele SQL ou NoSQL);</li>
-    <li>Implementação de login, seção e Token;</li>
-    <li>Recursos de proteção de rotas e melhores tratamentos de erros;</li>
-    <li>Migração da API para TypeScript;</li>
-    <li>Implementação de um Front-end;</li>
-    <li>Recursos de criptografia de senha por Hash;</li>
-    <li>Melhorias no arquivo README e tradução para o Inglês.</li>
-</ul>
+
+* Utilização de um Banco de dados real (Seja ele SQL ou NoSQL);
+* ~~Implementação de login, seção e Token;~~
+* ~~Recursos de proteção de rotas e melhores tratamentos de erros;~~
+* Migração da API para TypeScript;
+* Implementação de um Front-end;
+* ~~Recursos de criptografia de senha por Hash;~~
+* Melhorias no arquivo README e tradução para o Inglês.

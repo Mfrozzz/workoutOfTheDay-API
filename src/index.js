@@ -5,8 +5,8 @@ const v1workoutRouter = require("./v1/routes/workoutRoutes");
 const v1RecordRouter = require("./v1/routes/recordRoutes");
 const v1MemberRouter = require("./v1/routes/memberRoutes");
 const bodyParser = require("body-parser")
-const apicache = require("apicache");
-const cache = apicache.middleware;
+// const apicache = require("apicache");
+// const cache = apicache.middleware;
 
 app.use(bodyParser.json())
 // app.use(cache("2 minutes"));

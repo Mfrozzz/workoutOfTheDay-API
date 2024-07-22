@@ -3,6 +3,9 @@ const apicache = require("apicache");
 const router = express.Router();
 const cache = apicache.middleware;
 const recordController = require("../../controllers/recordController");
+const verifyToken = require("../../middleware/isAuthenticated");
+
+router.use(verifyToken);
 
 router.get("/", cache("2 minutes"),recordController.getAllRecords);
 

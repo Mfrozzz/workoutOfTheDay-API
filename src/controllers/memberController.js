@@ -54,26 +54,6 @@ const getOneMemberByEmail = (email) => {
             message: `${email}: Can't find member with this Email`
           }
     }
-    // const email = req;
-    // if (!email) {
-    //   res.status(400).send({
-    //     status: "BAD REQUEST",
-    //     data: {
-    //         error: "Email can't be empty"
-    //     }
-    //   });
-    // }
-    // try {
-    //     const member = memberService.getOneMemberByEmail(email);
-    //     res.send({ status: "OK", data: member });
-    // } catch (error) {
-    //     res.status(error?.status || 500).send({
-    //         status: "FAILED",
-    //         data: {
-    //             error: error?.message || error
-    //         }
-    //     })
-    // }
 };
 
 const createNewMember = (req,res)=>{
