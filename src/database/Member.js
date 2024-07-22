@@ -32,6 +32,24 @@ const getOneMember = (memberId) => {
     }
 };
 
+const getOneMemberByEmail = (email) => {
+  try {
+      const member = DB.members.find((member) => member.email === email);
+      if (!member) {
+        throw{
+          status:400,
+          message: `${email}: Can't find member with this Email`
+        }
+      }
+      return member;
+  } catch (error) {
+      throw{
+          status: error?.status || 500,
+          message: error?.message || error
+      }
+  }
+};
+
 const createNewMember = (newMember) =>{
     const isAlreadyAdded = DB.members.findIndex((member)=> member.email === newMember.email) > -1;
     if(isAlreadyAdded){
@@ -108,5 +126,6 @@ module.exports = {
     createNewMember,
     getOneMember,
     updateOneMember,
-    deleteOneMember
+    deleteOneMember,
+    getOneMemberByEmail
 };

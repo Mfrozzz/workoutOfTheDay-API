@@ -18,11 +18,20 @@ const getOneMember = (memberId) => {
         throw error
     }
 };
+
+const getOneMemberByEmail = (email) => {
+    try {
+        const member = Member.getOneMemberByEmail(email);
+        return member;
+    } catch (error) {
+        throw error
+    }
+};
   
 const createNewMember = (newMember) => {
     const memberToInsert = {
-        ...newMember,
         id:uuid(),
+        ...newMember,
         createdAt: new Date().toLocaleString("pt-BR",{timeZone:"UTC"}),
         updatedAt:new Date().toLocaleString("pt-BR",{timeZone:"UTC"})
     }
@@ -57,4 +66,5 @@ const deleteOneMember = (memberId) => {
     createNewMember,
     updateOneMember,
     deleteOneMember,
+    getOneMemberByEmail
   };

@@ -176,6 +176,16 @@
       "dateOfBirth": "08/04/1993",
       "email": "greg@mail.com",
       "password": "a6dcde7eceb689142f21a1e30b5fdb868ec4cd25d5537d67ac7e8c7816b0e862"
+    },
+    {
+      "id": "f9fa17d2-15f4-4ab4-9915-e71932f402de",
+      "name": "Ramon Dino",
+      "gender": "male",
+      "dateOfBirth": "23/04/1990",
+      "email": "ramomDino@gmail.com",
+      "password": "$2a$08$1ELvjOikZz3K8cuQxMzpIeSv6lFRlLvczmWKUSRoA2jXmKaMPmzse",
+      "createdAt": "22/07/2024, 12:57:02",
+      "updatedAt": "22/07/2024, 12:57:02"
     }
   ],
   "records": [
