@@ -55,6 +55,13 @@ cd workoutOfTheDay-API
 npm i
 ```
 
+4º passo:
+<p>Execução da aplicação</p>
+
+```
+npm run dev
+```
+
 <hr>
 
 <h2 id="SccArq">Arquitetura</h2>
